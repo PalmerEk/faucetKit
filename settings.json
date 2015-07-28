@@ -1,0 +1,64 @@
+{
+	"port": 3030
+	,"theme": "superhero"
+	,"stylesheet": ""
+
+	,"site": {
+	    "name": "BUNExplorer",
+	    "subtitle": "Bun Explorer",
+	    "url": "",
+	    "domain": ""
+	  },
+	  "session": {
+	    "secret": "5ecretsR4Bi0tches",
+	    "key": "BUNExplorer"
+	  },
+	  "googleAnalytics": "UA-20273012-7"
+
+	,"title": "Digitalcoin (DGC) Faucet - Get free Digitalcoin every 12 hours!"
+	,"brand": "Digitalcoin Faucet"
+	,"copyright": "<a href='http://dgcfoundation.com'>DGC Foundation</a>"
+	,"coin": "Digitalcoin"
+	,"symbol": "DGC"
+	,"pages":{
+		"home":{
+			"h1":"Digitalcoin (DGC) Faucet"
+			,"faucet_text":"This faucet automatically pays out Digitalcoin on a schedule. Enter your Digitalcoin address below to receive free DGC. <a href='https://mywl.lt'>Need a wallet?</a>"
+			,"payout_header":"Payout Chances"
+		}
+	}
+	,"session_secret":"_secret_"
+	,"show_next_payout": true
+	,"show_wallet_balance": true
+	,"rpc":{
+		"host":"localhost"
+		,"port":48444
+		,"user":"bunnycoinrpc"
+		,"pass":"Fpx5a6e46titiHRU9yiDSZ1WMaTHwXJfWdsbyc4SXMnC"
+		,"timeout":30000
+		,"ssl":false
+		,"sslStrict":false
+		,"account":"faucet"
+	}
+	,"faucet":{
+		"immediate":true
+		,"interval":720
+		,"user_limit":6
+		,"payout":[
+			[1,50]
+			,[2,20]
+			,[3,15]
+			,[4,10]
+			,[5,5]
+		]
+	}
+	,"database":{
+		"processor":"processor.db"
+		,"users":"users.db"
+	}
+	,"dashboard":{
+		"path":"/dashboard"
+		,"password":"welcome1"
+	}
+}
+
